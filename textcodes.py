@@ -1,0 +1,8 @@
+archivo = open("convertor.txt","+r")
+datos = archivo.read()
+print(datos)
+archivo.close()
+archivo = open("convertor.txt","w")
+resultado = datos.lower()
+archivo.write(resultado)
+archivo.close()
